@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		389F90431AD5C5DE00DB0C61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F90421AD5C5DE00DB0C61 /* main.m */; };
 		389F90461AD5C5DE00DB0C61 /* DCZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F90451AD5C5DE00DB0C61 /* DCZAppDelegate.m */; };
-		389F90491AD5C5DE00DB0C61 /* DCZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F90481AD5C5DE00DB0C61 /* DCZViewController.m */; };
 		389F904C1AD5C5DE00DB0C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389F904A1AD5C5DE00DB0C61 /* Main.storyboard */; };
 		389F904E1AD5C5DE00DB0C61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389F904D1AD5C5DE00DB0C61 /* Images.xcassets */; };
 		389F90511AD5C5DE00DB0C61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389F904F1AD5C5DE00DB0C61 /* LaunchScreen.xib */; };
 		389F905D1AD5C5DE00DB0C61 /* DCZToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F905C1AD5C5DE00DB0C61 /* DCZToDoListTests.m */; };
+		389F90681AD5E66700DB0C61 /* DCZAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F90671AD5E66700DB0C61 /* DCZAddToDoItemViewController.m */; };
+		389F906B1AD5F09900DB0C61 /* DCZToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F906A1AD5F09900DB0C61 /* DCZToDoListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		389F90421AD5C5DE00DB0C61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		389F90441AD5C5DE00DB0C61 /* DCZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCZAppDelegate.h; sourceTree = "<group>"; };
 		389F90451AD5C5DE00DB0C61 /* DCZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZAppDelegate.m; sourceTree = "<group>"; };
-		389F90471AD5C5DE00DB0C61 /* DCZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCZViewController.h; sourceTree = "<group>"; };
-		389F90481AD5C5DE00DB0C61 /* DCZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZViewController.m; sourceTree = "<group>"; };
 		389F904B1AD5C5DE00DB0C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		389F904D1AD5C5DE00DB0C61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		389F90501AD5C5DE00DB0C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		389F90561AD5C5DE00DB0C61 /* DCZToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCZToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		389F905B1AD5C5DE00DB0C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389F905C1AD5C5DE00DB0C61 /* DCZToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCZToDoListTests.m; sourceTree = "<group>"; };
+		389F90661AD5E66700DB0C61 /* DCZAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCZAddToDoItemViewController.h; sourceTree = "<group>"; };
+		389F90671AD5E66700DB0C61 /* DCZAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCZAddToDoItemViewController.m; sourceTree = "<group>"; };
+		389F90691AD5F09900DB0C61 /* DCZToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCZToDoListTableViewController.h; sourceTree = "<group>"; };
+		389F906A1AD5F09900DB0C61 /* DCZToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCZToDoListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,11 @@
 			children = (
 				389F90441AD5C5DE00DB0C61 /* DCZAppDelegate.h */,
 				389F90451AD5C5DE00DB0C61 /* DCZAppDelegate.m */,
-				389F90471AD5C5DE00DB0C61 /* DCZViewController.h */,
-				389F90481AD5C5DE00DB0C61 /* DCZViewController.m */,
 				389F904A1AD5C5DE00DB0C61 /* Main.storyboard */,
+				389F90691AD5F09900DB0C61 /* DCZToDoListTableViewController.h */,
+				389F906A1AD5F09900DB0C61 /* DCZToDoListTableViewController.m */,
+				389F90661AD5E66700DB0C61 /* DCZAddToDoItemViewController.h */,
+				389F90671AD5E66700DB0C61 /* DCZAddToDoItemViewController.m */,
 				389F904D1AD5C5DE00DB0C61 /* Images.xcassets */,
 				389F904F1AD5C5DE00DB0C61 /* LaunchScreen.xib */,
 				389F90401AD5C5DE00DB0C61 /* Supporting Files */,
@@ -219,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389F90491AD5C5DE00DB0C61 /* DCZViewController.m in Sources */,
+				389F90681AD5E66700DB0C61 /* DCZAddToDoItemViewController.m in Sources */,
 				389F90461AD5C5DE00DB0C61 /* DCZAppDelegate.m in Sources */,
+				389F906B1AD5F09900DB0C61 /* DCZToDoListTableViewController.m in Sources */,
 				389F90431AD5C5DE00DB0C61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

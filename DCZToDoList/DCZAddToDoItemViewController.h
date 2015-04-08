@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DCZAddToDoItemViewController.h
 //  DCZToDoList
 //
 //  Created by Christine Gornall on 4/8/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DCZViewController : UIViewController
-
+@interface DCZAddToDoItemViewController : UIViewController
 
 @end
-
