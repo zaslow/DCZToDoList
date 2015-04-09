@@ -15,6 +15,7 @@
 		389F905D1AD5C5DE00DB0C61 /* DCZToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F905C1AD5C5DE00DB0C61 /* DCZToDoListTests.m */; };
 		389F90681AD5E66700DB0C61 /* DCZAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F90671AD5E66700DB0C61 /* DCZAddToDoItemViewController.m */; };
 		389F906B1AD5F09900DB0C61 /* DCZToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F906A1AD5F09900DB0C61 /* DCZToDoListTableViewController.m */; };
+		389F906E1AD62A3000DB0C61 /* DCZToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F906D1AD62A3000DB0C61 /* DCZToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		389F90671AD5E66700DB0C61 /* DCZAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCZAddToDoItemViewController.m; sourceTree = "<group>"; };
 		389F90691AD5F09900DB0C61 /* DCZToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCZToDoListTableViewController.h; sourceTree = "<group>"; };
 		389F906A1AD5F09900DB0C61 /* DCZToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCZToDoListTableViewController.m; sourceTree = "<group>"; };
+		389F906C1AD62A2F00DB0C61 /* DCZToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCZToDoItem.h; sourceTree = "<group>"; };
+		389F906D1AD62A3000DB0C61 /* DCZToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCZToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +89,13 @@
 			children = (
 				389F90441AD5C5DE00DB0C61 /* DCZAppDelegate.h */,
 				389F90451AD5C5DE00DB0C61 /* DCZAppDelegate.m */,
-				389F904A1AD5C5DE00DB0C61 /* Main.storyboard */,
 				389F90691AD5F09900DB0C61 /* DCZToDoListTableViewController.h */,
 				389F906A1AD5F09900DB0C61 /* DCZToDoListTableViewController.m */,
 				389F90661AD5E66700DB0C61 /* DCZAddToDoItemViewController.h */,
 				389F90671AD5E66700DB0C61 /* DCZAddToDoItemViewController.m */,
+				389F906C1AD62A2F00DB0C61 /* DCZToDoItem.h */,
+				389F906D1AD62A3000DB0C61 /* DCZToDoItem.m */,
+				389F904A1AD5C5DE00DB0C61 /* Main.storyboard */,
 				389F904D1AD5C5DE00DB0C61 /* Images.xcassets */,
 				389F904F1AD5C5DE00DB0C61 /* LaunchScreen.xib */,
 				389F90401AD5C5DE00DB0C61 /* Supporting Files */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				389F90681AD5E66700DB0C61 /* DCZAddToDoItemViewController.m in Sources */,
+				389F906E1AD62A3000DB0C61 /* DCZToDoItem.m in Sources */,
 				389F90461AD5C5DE00DB0C61 /* DCZAppDelegate.m in Sources */,
 				389F906B1AD5F09900DB0C61 /* DCZToDoListTableViewController.m in Sources */,
 				389F90431AD5C5DE00DB0C61 /* main.m in Sources */,
