@@ -19,13 +19,13 @@
 
 - (void)loadInitialData {
     DCZToDoItem *item1 = [[DCZToDoItem alloc] init];
-    item1.itemName = @"Buy milk";
+    item1.itemName = @"Study for exam";
     [self.toDoItems addObject:item1];
     DCZToDoItem *item2 = [[DCZToDoItem alloc] init];
-    item2.itemName = @"Buy eggs";
+    item2.itemName = @"Take out trash";
     [self.toDoItems addObject:item2];
     DCZToDoItem *item3 = [[DCZToDoItem alloc] init];
-    item3.itemName = @"Read a book";
+    item3.itemName = @"Empty dishwasher";
     [self.toDoItems addObject:item3];
 }
 
@@ -44,36 +44,37 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+// Table view data source methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.toDoItems count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListProtoypeCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    DCZToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = toDoItem.itemName;
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
-}
+}"
 */
 
 /*
