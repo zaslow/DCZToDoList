@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCZToDoItem.h"
 
 @interface DCZAddToDoItemViewController : UIViewController
+
+@property DCZToDoItem *toDoItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 
 @end

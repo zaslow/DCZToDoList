@@ -7,6 +7,7 @@
 //
 
 #import "DCZToDoListTableViewController.h"
+#import "DCZAddToDoItemViewController.h"
 #import "DCZToDoItem.h"
 
 @interface DCZToDoListTableViewController ()
@@ -30,6 +31,14 @@
 }
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue {
+    // Store and display a new item
+    
+    DCZAddToDoItemViewController *source = [segue sourceViewController];
+    DCZToDoItem *item = source.toDoItem;
+    if (item != nil) {
+        [self.toDoItems addObject:item];
+        [self.tableView reloadData];
+    }
     
 }
 
@@ -65,6 +74,12 @@
     // Configure the cell...
     DCZToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
     cell.textLabel.text = toDoItem.itemName;
+    
+    if (toDoItem.completion) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     
     return cell;
 }
@@ -113,4 +128,22 @@
 }
 */
 
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    DCZToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    
+    // Toggle completion state of item
+    tappedItem.completion = !tappedItem.completion;
+    
+    // Reload item list after toggling
+    [tableView reloadRowsAtIndexPaths:@[indexPath]
+                     withRowAnimation:UITableViewRowAnimationNone];
+}
+
+
+
 @end
+
+
